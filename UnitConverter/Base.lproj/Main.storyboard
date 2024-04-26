@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,15 +13,13 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter temperature" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5z2-Jc-VkR">
-                                <rect key="frame" x="78" y="125" width="240" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter temperature" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5z2-Jc-VkR">
+                                <rect key="frame" x="130.33333333333337" y="125" width="167.66666666666663" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5626605412615584" green="0.66625591160095843" blue="0.65686682146511244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="ldI-U4-SF0"/>
-                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -29,17 +27,9 @@
                                     <action selector="textFieldReturn:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="asq-Nk-LAn"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-Nj-a3b">
-                                <rect key="frame" x="78" y="323" width="240" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8L-9R-9hv">
-                                <rect key="frame" x="107" y="202" width="183" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="0FW-ZD-qz7"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8L-9R-9hv">
+                                <rect key="frame" x="124.66666666666667" y="185" width="178.66666666666663" height="35.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Convert to Fahrenheit" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
@@ -49,11 +39,9 @@
                                     <action selector="convertFahr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GdB-cV-vYX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa1-Kv-tvu">
-                                <rect key="frame" x="107" y="266" width="183" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="tMp-c3-eyN"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa1-Kv-tvu">
+                                <rect key="frame" x="137" y="266.33333333333331" width="154.33333333333337" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="7" height="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Convert to Celsius" cornerStyle="capsule">
@@ -64,34 +52,28 @@
                                     <action selector="convertTemp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pk1-nS-Q74"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5l-17-rJK" userLabel="resultLabel">
+                                <rect key="frame" x="129" y="436.66666666666669" width="170" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <keyboardLayoutGuide key="keyboard" id="YUq-ud-Mb0"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="f8L-9R-9hv" firstAttribute="leading" secondItem="Sa1-Kv-tvu" secondAttribute="leading" id="6HD-Zj-Hha"/>
-                            <constraint firstItem="Sa1-Kv-tvu" firstAttribute="top" secondItem="f8L-9R-9hv" secondAttribute="bottom" constant="26" id="92A-Vu-aXX"/>
-                            <constraint firstItem="f8L-9R-9hv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="DLl-4m-yvx"/>
-                            <constraint firstItem="5z2-Jc-VkR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="DcG-cT-yi8"/>
-                            <constraint firstItem="5z2-Jc-VkR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="Ibp-9O-fY6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5z2-Jc-VkR" secondAttribute="trailing" constant="75" id="Jfb-NX-JON"/>
-                            <constraint firstItem="5z2-Jc-VkR" firstAttribute="leading" secondItem="4DQ-Nj-a3b" secondAttribute="leading" id="Joh-F8-AiH"/>
-                            <constraint firstItem="5z2-Jc-VkR" firstAttribute="trailing" secondItem="4DQ-Nj-a3b" secondAttribute="trailing" id="P6k-k7-L3O"/>
-                            <constraint firstItem="4DQ-Nj-a3b" firstAttribute="top" secondItem="Sa1-Kv-tvu" secondAttribute="bottom" constant="19" id="Q20-9c-8XX"/>
-                            <constraint firstItem="Sa1-Kv-tvu" firstAttribute="centerX" secondItem="4DQ-Nj-a3b" secondAttribute="centerX" id="Wer-6o-sTg"/>
-                            <constraint firstItem="f8L-9R-9hv" firstAttribute="top" secondItem="5z2-Jc-VkR" secondAttribute="bottom" constant="43" id="ncM-b1-VAs"/>
-                            <constraint firstItem="f8L-9R-9hv" firstAttribute="trailing" secondItem="Sa1-Kv-tvu" secondAttribute="trailing" id="voI-8y-5xF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4DQ-Nj-a3b" secondAttribute="bottom" constant="448" id="xzG-Ey-HZg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L5l-17-rJK" secondAttribute="bottom" constant="435" id="geq-Tg-Phr"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="4DQ-Nj-a3b" id="Nd3-Ry-sd7"/>
+                        <outlet property="resultLabel" destination="L5l-17-rJK" id="Q1Y-uG-vis"/>
                         <outlet property="tempText" destination="5z2-Jc-VkR" id="1ca-AE-urO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1135.1145038167938" y="8.4507042253521139"/>
+            <point key="canvasLocation" x="-1135.5140186915887" y="8.4233261339092884"/>
         </scene>
     </scenes>
     <resources>

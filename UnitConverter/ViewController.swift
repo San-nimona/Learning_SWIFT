@@ -12,7 +12,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tempText: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
-    
+    var myConstraint = NSLayoutConstraint(
+        item: myLabel,
+        attribute: NSLayoutConstraint.Attribute.width,
+        relatedBy: NSLayoutConstraint.Relation.equal,
+        toItem: nil,
+        attribute: NSLayoutConstraint.Attribute.width,
+        multiplier: 1.0,
+        constant: 170.0
+        )
+    self.resultLabel.addConstraint(myConstraint)
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
